@@ -34,6 +34,7 @@ public class SecurityConfig {
             "/webjars/**",
             "/v2/api-docs/**",
             "/v3/api-docs/**",
+            "/role/createrole"
     };
 
     @Bean

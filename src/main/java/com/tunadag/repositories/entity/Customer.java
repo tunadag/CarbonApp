@@ -20,5 +20,7 @@ public class Customer extends BaseEntity {
     private String tableName;
     private String companyName;
     private Region region;
-    private String address;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id")
+    private Address address;
 }

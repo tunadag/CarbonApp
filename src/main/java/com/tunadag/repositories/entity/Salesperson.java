@@ -27,8 +27,6 @@ public class Salesperson extends BaseEntity {
     @Enumerated(EnumType.STRING)
     @Column(unique = true)
     private SalespersonCode salespersonCode;
-    private String name;
-    private String surName;
     @OneToMany
     @Builder.Default
     private List<Customer> customerList = new ArrayList<>();
