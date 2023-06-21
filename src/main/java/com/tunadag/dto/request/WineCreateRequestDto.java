@@ -1,10 +1,8 @@
 package com.tunadag.dto.request;
 
 import com.tunadag.repositories.entity.enums.ProductType;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
@@ -16,11 +14,11 @@ public class WineCreateRequestDto {
     private int productionYear;
     private boolean imported;
     private String productionCountry;
-    private double netPrice;
-    private double vat;
-    private double vatPrice;
+    @NotNull
     private String producerName;
+    @NotNull
     private String serieName;
+    @NotNull
     private String grapeType;
     private int vintageYear;
     private int volumeMl;

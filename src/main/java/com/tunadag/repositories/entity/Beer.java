@@ -15,5 +15,5 @@ public class Beer extends Product {
 
     private String brandName;
     private String serieName;
-    private int unitsPerBox;
+    private int volumeMl;
 }

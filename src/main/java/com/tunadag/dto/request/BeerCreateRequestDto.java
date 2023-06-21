@@ -16,10 +16,7 @@ public class BeerCreateRequestDto {
     private int productionYear;
     private boolean imported;
     private String productionCountry;
-    private double netPrice;
-    private double vat;
-    private double vatPrice;
     private String brandName;
     private String serieName;
-    private int unitsPerBox;
+    private int volumeMl;
 }
